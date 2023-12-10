@@ -14,7 +14,6 @@ import java.util.List;
 public class CarController {
 
     private CarService carService = new CarServiceImpl();
-
     @GetMapping("/cars")
     public String show(@RequestParam(value = "count", defaultValue = "5") int count, Model model) {
         List<Car> carList;
